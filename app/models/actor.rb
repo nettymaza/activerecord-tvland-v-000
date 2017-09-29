@@ -9,7 +9,6 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     characters.map {|character| "#{character.name}"}
-    binding.pry
   end
 
 
